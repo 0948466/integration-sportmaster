@@ -1,0 +1,57 @@
+$ns: '.imigize-footer-sportmaster';
+
+#{$ns} {
+    position: relative;
+    padding: 0.722em 9.9% 0.722em 9.4%;
+    text-align: center;
+    background-color: #fff;
+    @include w320-767 {
+        padding-left: 73px;
+    }
+}
+
+#{$ns}-icon-scrolls-up {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -15px;
+    width: 39px;
+    height: 32px;
+    box-sizing: border-box;
+    background-color: #f7999c;
+    cursor: pointer;
+    &:hover {
+        #{$ns}-arrow {
+            &::before, &::after {
+                box-shadow: 0 0 5px rgba(255,255,255,0.6);
+            }
+        }
+    }
+}
+
+#{$ns}-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &::before, &::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 2px;
+        background-color: #fff;
+    }
+    &::before {
+        margin-left: -7px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    &::after {
+        margin-left: -1px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}

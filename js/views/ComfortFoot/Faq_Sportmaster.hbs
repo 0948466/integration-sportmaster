@@ -1,0 +1,31 @@
+{{#if faq}}
+    <imigize class="{{ns}}">
+        {{#if faq.title}}
+            <imigize class="{{ns "title-wrap"}}">
+                <imigize class="{{ns "title"}}">{{ faq.title }}</imigize>
+            </imigize>
+        {{/if}}
+        {{#if faq.description}}
+            <imigize class="swiper-container">
+                <imigize class="swiper-wrapper">
+
+                    {{#each faq.description}}
+                        <imigize class="swiper-slide">
+                            {{#if this.text}}
+                                <imigize class="{{ns "text-wrap"}}">
+                                    <imigize class="{{ns "text"}}">{{{ this.text }}}</imigize>
+                                </imigize>
+                            {{/if}}
+                            {{#if this.backgroundImg}}
+                                <imigize class="{{ns "image"}}" style="background-image: url({{ this.backgroundImg }})">
+                                </imigize>
+                            {{/if}}
+                        </imigize>
+                    {{/each}}
+
+                </imigize>
+                <imigize class="swiper-pagination"></imigize>
+            </imigize>
+        {{/if}}
+    </imigize>
+{{/if}}

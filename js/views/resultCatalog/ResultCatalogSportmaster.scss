@@ -1,0 +1,58 @@
+$ns: '.imigize-result-catalog-sportmaster';
+
+#{$ns} {
+  padding: 0.5em 5%;
+  width: 184px;
+  box-sizing: border-box;
+  font-family: 'corp', arial, helvetica, sans-serif;
+  background-color: #7b8086;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    #{$ns}-advice {
+      display: block;
+    }
+  }
+  @include mobileSportmaster {
+    width: 100%;
+    max-width: 184px;
+  }
+}
+
+#{$ns}-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#{$ns}-textResult,
+#{$ns}-advice {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+#{$ns}-textResult {
+  @include mobileSportmaster {
+    max-width: 70%;
+  }
+}
+
+#{$ns}-value {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #fff600;
+}
+
+#{$ns}-value__percent {
+  font-size: 12px;
+}
+
+#{$ns}-advice {
+  display: none;
+}
+
+#{$ns}-size {
+  font-weight: bold;
+}

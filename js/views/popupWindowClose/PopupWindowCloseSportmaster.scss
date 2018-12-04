@@ -1,0 +1,48 @@
+$ns: '.imigize-popupWindow';
+
+#{$ns}-content {
+  border-radius: 5px;
+}
+
+#{$ns}-close {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: -47px;
+    margin-top: 20px;
+    width: 27px;
+    height: 27px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 15;
+    &::before,
+    &::after {
+        content: "";
+        top: 13px;
+        left: 1px;
+        position: absolute;
+        width: 24px;
+        height: 1.6px;
+        background-color: #c41b21;
+    }
+    &::before {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &::after {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+#{$ns}-close__white {
+    &::before,
+    &::after {
+        background-color: #fff;
+    }
+}

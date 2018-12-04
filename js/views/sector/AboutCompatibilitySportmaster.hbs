@@ -1,0 +1,34 @@
+<imigize class="{{ns}}">
+    <imigize class="{{ns "content"}}">
+        <imigize class="{{ns "title"}}">
+            {{_ "Что означают проценты"}}
+        </imigize>
+
+        <imigize class="{{ns "description"}}">
+            {{#each data}}
+                <imigize class="{{ns "wrap"}}">
+                    <imigize class="{{ns "left"}}">
+                        <imigize class="{{ns "left-title"}}">
+                            {{_ this.title }}
+                        </imigize>
+                        <imigize class="{{ns "left-text"}}">
+                            {{_ this.text }}
+                        </imigize>
+                    </imigize>
+                    <imigize class="{{ns "right"}}">
+                        <imigize class="{{ns "right-compatibility"}}">
+                            {{_ this.compatibility }}
+                        </imigize>
+                    </imigize>
+                </imigize>
+            {{/each}}
+        </imigize>
+
+        <imigize class="{{ns "btn-close-wrap"}}">
+            <imigize class="{{ns "btn-close"}}">
+                {{_ "Закрыть"}}
+            </imigize>
+        </imigize>
+
+    </imigize>
+</imigize>

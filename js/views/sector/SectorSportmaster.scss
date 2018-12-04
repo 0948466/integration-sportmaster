@@ -1,0 +1,80 @@
+$ns: '.imigize-sector-sportmaster';
+
+#{$ns} {
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 47px;
+    text-align: center;
+}
+
+#{$ns}-main {
+    width: 94px;
+    height: 94px;
+    display: block;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+#{$ns}-inner {
+    position: absolute;
+    content: "";
+    left: 2px;
+    top: 2px;
+    width: 90px;
+    height: 90px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#{$ns}-title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+#{$ns}-title-value {
+    display: inline;
+}
+
+#{$ns}-title-percent {
+    display: inline;
+}
+
+#{$ns}-bottom-title {
+    margin-top: 10px;
+    color: #2ae38b;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+#{$ns}-text {
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    color: #8b8b8b;
+    text-align: center;
+}
+
+#{$ns}-text-value {
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media only screen and (max-device-width: 768px) {
+    #{$ns}-text {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    #{$ns}-text-value {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,111 @@
+$landing3a3535: #3a3535;
+$landing5f5f5f: #5f5f5f;
+
+$w1920: 1920px;
+$w768: 768px;
+$w320: 320px;
+
+@mixin responsiveFont($bigFont, $smallFont) {
+
+    $bigView: $w1920;
+    $smallView: $w320;
+    $m: ($bigFont - $smallFont) / ($bigView - $smallView);
+    $b: $smallFont - ($m * $smallView);
+
+    @media only screen and (min-width: $smallView) {
+        font-size: calc(#{$m} * 100vw + #{$b});
+    }
+
+    @media only screen and (min-width: $bigView) {
+        font-size: $bigFont;
+    }
+}
+
+@mixin w1920 {
+    @media only screen and (min-width: #{$w1920}) {
+        @content;
+    }
+}
+@mixin w768-1919 {
+    @media only screen and (min-width: #{$w768}) and (max-width: #{$w1920 - 1px}) {
+        @content;
+    }
+}
+@mixin w320-767 {
+    @media only screen and (max-width: #{$w768 - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktopSportmaster {
+    @media only screen and (min-width: 1081px) {
+        @content;
+    }
+}
+
+@mixin mobileSportmaster {
+    @media only screen and (max-width: 1080px) {
+        @content;
+    }
+}
+
+
+@mixin buttonCompatibility {
+    position: relative;
+    display: flex;
+    padding: 9px 35px 9px 15px;
+    margin-bottom: 33px;
+    text-align: left;
+    cursor: pointer;
+    background-color: #7b8086;
+    border-radius: 6px;
+    min-height: 61px;
+    box-sizing: border-box;
+    font-family: 'corp',arial,helvetica,sans-serif;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        right: 0;
+        top: calc(100% - 24px);
+        border-top: 12px transparent solid;
+        border-left: 12px transparent solid;
+    }
+    @include desktopSportmaster {
+        &::after {
+            border-right: 12px #fff solid;
+            border-bottom: 12px #fff solid;
+        }
+    }
+    @include mobileSportmaster {
+        &::after {
+            border-right: 12px rgb(239, 243, 244) solid;
+            border-bottom: 12px rgb(239, 243, 244) solid;
+        }
+    }
+}
+
+@mixin linkSportmaster {
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+    cursor: pointer;
+}
+
+@mixin btnSportmaster {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.3em 3%;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    background: linear-gradient(to bottom,#005ca7 0,#004c87 100%);
+    cursor: pointer;
+    &:hover {
+        text-shadow: 0 0 5px rgba(255,255,255,0.6);
+    }
+}

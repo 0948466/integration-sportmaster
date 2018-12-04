@@ -1,0 +1,65 @@
+$ns: '.imigize-aboutCompatibility-sportmaster';
+
+#{$ns} {
+    margin: 0 auto;
+    padding: 1.5em 4% 2.5em;
+    position: relative;
+    min-height: 335px;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: auto;
+    color: #252525;
+    font-family: 'cotext', arial, helvetica, sans-serif;
+}
+
+#{$ns}-title {
+    margin-bottom: 0.6em;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #005aaa;
+}
+
+#{$ns}-description {
+    margin-bottom: 2em;
+}
+
+#{$ns}-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+#{$ns}-left {
+    max-width: 70%;
+}
+
+#{$ns}-left-title {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: bold;
+    color: #000;
+}
+
+#{$ns}-left-text {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #000;
+}
+
+#{$ns}-right-compatibility {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #005aaa;
+}
+
+#{$ns}-btn-close-wrap {
+    text-align: center;
+}
+
+#{$ns}-btn-close {
+    @include btnSportmaster;
+    padding: 0.4em 4%;
+}

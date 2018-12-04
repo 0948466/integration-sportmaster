@@ -1,0 +1,28 @@
+$ns: '.imigize-integration-start-sportmaster';
+
+#{$ns} {
+    @include buttonCompatibility;
+    display: block;
+    padding-right: 15px;
+}
+
+#{$ns}-top-title {
+    margin-bottom: 5px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #fff;
+}
+
+#{$ns}-wrap {
+    display: flex;
+    align-items: flex-start;
+}
+
+#{$ns}-button {
+    @include linkSportmaster;
+}
+
+#{$ns}-button-for-entrance {
+    margin-right: 7%;
+}

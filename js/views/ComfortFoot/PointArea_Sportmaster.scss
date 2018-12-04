@@ -1,0 +1,530 @@
+$ns: '.imigize-comfortForm-PointArea-sportmaster';
+
+#{$ns} {
+    display: none;
+}
+
+#{$ns}-area-top {
+    padding: 12px 10px;
+    &__shadow {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
+#{$ns}-area-text {
+    margin-bottom: 18px;
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+}
+
+#{$ns}-area-btn {
+    @include sportmasterBtn;
+
+    padding: 10px 12px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+}
+
+#{$ns}-area-btn-change-side,
+#{$ns}-area-btn-end {
+    display: none;
+    vertical-align: top;
+    padding: 10px;
+    width: 45%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#{$ns}-area-btn-change-side {
+    margin-right: 10%;
+}
+
+#{$ns}-area-selected {
+    position: relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#{$ns}-add-new-area-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $sportmasterColor;
+    cursor: pointer;
+    z-index: 1;
+    &:hover {
+        background-color: $sportmasterColorHover;
+    }
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -1px;
+        margin-left: -11px;
+        width: 22px;
+        height: 2px;
+        background-color: #fff;
+    }
+    &::before {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+#{$ns}-btn-copy-foot {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $sportmasterColor;
+    cursor: pointer;
+    z-index: 1;
+    background-image: image-url("comfortFoot/icon-copy.svg");
+    background-repeat: no-repeat;
+    background-size: 57%;
+    background-position: center;
+    &:hover {
+        background-color: $sportmasterColorHover;
+    }
+}
+
+#{$ns}-popup-message {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    padding: 5px 10px;
+    width: 155px;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+}
+
+#{$ns}-area-selected-top, #{$ns}-area-selected-bottom {
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+#{$ns}-area-selected-top {
+    bottom: 0;
+    background-position: 50% 0;
+    background-size: contain;
+    background-image: image-url("comfortFoot/krossovok-top.svg");
+    &__left {
+        background-image: image-url("comfortFoot/krossovok-top-left.svg");
+    }
+}
+
+#{$ns}-area-selected-bottom {
+    display: none;
+    top: 0;
+    background-position: 0 bottom;
+    background-size: cover;
+    background-image: image-url("comfortFoot/krossovok-bottom.svg");
+    &__left {
+        background-image: image-url("comfortFoot/krossovok-bottom-left.svg");
+    }
+}
+
+#{$ns}-area-selected-btn {
+    position: absolute;
+    border-radius: 70px;
+    background-color: rgba(117, 220, 162, 0.32);
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(228, 83, 102, 0.32);
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -6px;
+        left: 50%;
+        margin-left: -6px;
+        width: 11px;
+        height: 11px;
+        background-color: transparent;
+        border-radius: 50%;
+    }
+    &__3 {
+        background-color: rgba(138, 182, 214, 0.5);
+        &::before {
+            background-color: #8ab6d6;
+        }
+    }
+    &__2 {
+        background-color: rgba(201, 216, 223, 0.5);
+        &::before {
+            background-color: #c9d8df;
+        }
+    }
+    &__1 {
+        background-color: rgba(117, 220, 162, 0.5);
+        &::before {
+            background-color: #4dd7aa;
+        }
+    }
+    &__-2 {
+        background-color: rgba(255, 216, 216, 0.5);
+        &::before {
+            background-color: #ffd8d8;
+        }
+    }
+    &__-3 {
+        background-color: rgba(251, 79, 79, 0.5);
+        &::before {
+            background-color: #fb4f4f;
+        }
+
+    }
+}
+
+#{$ns}-area-selected-btn[data-name='1'] {
+    bottom: 89%;
+    left: 30%;
+    width: 14%;
+    height: 11%;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+#{$ns}-area-selected-btn[data-name='2'] {
+    bottom: 78%;
+    left: 24%;
+    width: 13%;
+    height: 11%;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+#{$ns}-area-selected-btn[data-name='4'] {
+    bottom: 58%;
+    left: 42%;
+    width: 12%;
+    height: 13%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+#{$ns}-area-selected-btn[data-name='5'] {
+    left: 83%;
+    bottom: 33%;
+    width: 13%;
+    height: 13%;
+    -webkit-transform: rotate(73deg);
+    transform: rotate(73deg);
+}
+
+#{$ns}-area-selected-btn[data-name='6'] {
+    left: 83%;
+    bottom: 19%;
+    width: 13%;
+    height: 13%;
+    -webkit-transform: rotate(73deg);
+    transform: rotate(73deg);
+}
+
+#{$ns}-area-selected-btn[data-name='7'] {
+    bottom: 78%;
+    left: 7%;
+    width: 14%;
+    height: 11%;
+    -webkit-transform: rotate(-48deg);
+    transform: rotate(-48deg);
+}
+
+#{$ns}-area-selected-btn[data-name='8'] {
+    left: 3%;
+    bottom: 28%;
+    width: 13%;
+    height: 15%;
+}
+
+#{$ns}-area-selected-btn[data-name='9'] {
+    bottom: 62%;
+    left: 62%;
+    width: 27%;
+    height: 13%;
+    -webkit-transform: rotate(61deg);
+    transform: rotate(61deg);
+}
+
+#{$ns}-area-selected-btn[data-name='11'] {
+    bottom: 37%;
+    left: 48%;
+    width: 29%;
+    height: 13%;
+    -webkit-transform: rotate(43deg);
+    transform: rotate(43deg);
+}
+
+#{$ns}-area-selected-btn[data-name='12'] {
+    bottom: 20%;
+    left: 30%;
+    width: 30%;
+    height: 14%;
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+#{$ns}-area-selected-btn[data-name='13'] {
+    bottom: 2%;
+    left: 30%;
+    width: 30%;
+    height: 14%;
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+#{$ns}-area-selected-btn[data-name='14'] {
+    top: 87%;
+    left: 27%;
+    width: 36%;
+    height: 13%;
+}
+
+#{$ns}-area-selected-btn[data-name='17'] {
+    top: 73%;
+    left: 27%;
+    width: 36%;
+    height: 13%;
+}
+
+#{$ns}-area-selected-btn[data-name='19'] {
+    top: 12%;
+    left: 71%;
+    width: 31%;
+    height: 31%;
+}
+
+#{$ns}-area-selected-btn[data-name='21'] {
+    top: 29%;
+    left: -5%;
+    width: 24%;
+    height: 24%;
+}
+
+#{$ns}-area-selected-top__left {
+    #{$ns}-area-selected-btn[data-name='1'] {
+        bottom: 89%;
+        left: 55%;
+        width: 14%;
+        height: 11%;
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+
+    #{$ns}-area-selected-btn[data-name='2'] {
+        bottom: 78%;
+        left: 64%;
+        width: 13%;
+        height: 11%;
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+
+    #{$ns}-area-selected-btn[data-name='4'] {
+        bottom: 58%;
+        left: 46%;
+        width: 12%;
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+
+    #{$ns}-area-selected-btn[data-name='5'] {
+        left: 3%;
+        bottom: 33%;
+        width: 13%;
+        height: 13%;
+        -webkit-transform: rotate(-73deg);
+        transform: rotate(-73deg);
+    }
+
+    #{$ns}-area-selected-btn[data-name='6'] {
+        left: 3%;
+        bottom: 19%;
+        width: 13%;
+        height: 13%;
+        -webkit-transform: rotate(-73deg);
+        transform: rotate(-73deg);
+    }
+
+    #{$ns}-area-selected-btn[data-name='7'] {
+        bottom: 78%;
+        left: 79%;
+        width: 14%;
+        height: 11%;
+        -webkit-transform: rotate(48deg);
+        transform: rotate(48deg);
+    }
+
+    #{$ns}-area-selected-btn[data-name='8'] {
+        left: 84%;
+        bottom: 28%;
+        width: 13%;
+        height: 15%;
+    }
+
+    #{$ns}-area-selected-btn[data-name='9'] {
+        bottom: 62%;
+        left: 11%;
+        width: 27%;
+        height: 13%;
+        -webkit-transform: rotate(-61deg);
+        transform: rotate(-61deg);
+    }
+
+    #{$ns}-area-selected-btn[data-name='11'] {
+        bottom: 37%;
+        left: 22%;
+        width: 29%;
+        height: 13%;
+        -webkit-transform: rotate(-43deg);
+        transform: rotate(-43deg);
+    }
+
+    #{$ns}-area-selected-btn[data-name='12'] {
+        bottom: 20%;
+        left: 32%;
+        width: 30%;
+        height: 14%;
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+    }
+
+    #{$ns}-area-selected-btn[data-name='13'] {
+        bottom: 2%;
+        left: 30%;
+        width: 30%;
+        height: 14%;
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+    }
+
+}
+
+#{$ns}-area-selected-bottom__left {
+
+    #{$ns}-area-selected-btn[data-name='14'] {
+        top: 87%;
+        left: 37%;
+        width: 36%;
+        height: 13%;
+    }
+
+    #{$ns}-area-selected-btn[data-name='17'] {
+        top: 73%;
+        left: 37%;
+        width: 36%;
+        height: 13%;
+    }
+
+    #{$ns}-area-selected-btn[data-name='19'] {
+        top: 12%;
+        left: -3%;
+        width: 31%;
+        height: 31%;
+    }
+
+    #{$ns}-area-selected-btn[data-name='21'] {
+        top: 29%;
+        left: 81%;
+        width: 24%;
+        height: 24%;
+    }
+}
+
+#{$ns}-area-btn-change {
+    @include sportmasterBtn;
+
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 5px 5px 27px;
+    width: 85px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    user-select: none;
+}
+
+#{$ns}-area-btn-change-span {
+    display: inline;
+    font-size: 14px;
+}
+
+#{$ns}-area-btn-change-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-top: -8px;
+        margin-left: 2px;
+        border: 8px solid transparent;
+        border-bottom: 10px solid #fff;
+    }
+    &__active {
+        &::before {
+            margin-top: 1px;
+            margin-left: 2px;
+            border-top: 10px solid #fff;
+            border-bottom: none;
+        }
+    }
+}
+
+@media only screen and (max-device-width: 330px) {
+    #{$ns}-area-text {
+        padding: 0;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-device-width: 701px) {
+
+    #{$ns} {
+        min-height: 400px;
+    }
+
+    #{$ns}-sector {
+        min-height: 300px;
+        height: 643px;
+    }
+}
+
+@media only screen and (max-device-width: 1000px) {
+    #{$ns}-area-text {
+        margin-bottom: 10px;
+    }
+}

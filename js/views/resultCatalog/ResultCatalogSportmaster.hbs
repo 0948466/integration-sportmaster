@@ -1,0 +1,25 @@
+<imigize class="{{ns}}">
+    <imigize class="{{ns "top"}}">
+        {{#if textResult}}
+            <imigize class="{{ns "textResult"}}">
+                {{ textResult }}
+            </imigize>
+        {{/if}}
+
+        {{#if value}}
+            <imigize class="{{ns "value"}}">
+                {{ value }}
+                <span class="{{ns "value" "percent"}}">%</span>
+            </imigize>
+        {{/if}}
+    </imigize>
+
+        {{#if size}}
+            <imigize class="{{ns "advice"}}">
+                {{_ "Берите размер"}}:&nbsp;
+                <span class="{{ns "size"}}">
+                    {{ size }}
+                </span>
+            </imigize>
+        {{/if}}
+</imigize>

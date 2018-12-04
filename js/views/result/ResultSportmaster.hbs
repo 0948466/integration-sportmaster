@@ -1,0 +1,22 @@
+<imigize class="{{ns}}">
+    <imigize class="{{ns "button"}} {{ns "inner"}}">
+        <imigize class="{{ns "wrap"}}">
+            <imigize class="{{ns "title"}}"></imigize>
+            <imigize class="{{ns "compatibility-wrap"}}">
+                <imigize class="{{ns "compatibility"}}"></imigize>
+                <imigize class="{{ns "percent"}}">%</imigize>
+            </imigize>
+        </imigize>
+        <imigize class="{{ns "wrap"}} {{ns "wrap" "best-size"}}">
+            {{#if bestSize}}
+                <imigize class="{{ns "advice"}}">
+                    {{_ "Берите размер"}}:&nbsp;
+                    <imigize class="{{ns "advice" "size"}}">{{ bestSize }}</imigize>
+                </imigize>
+            {{/if}}
+            <imigize class="{{ns "title-comment"}}">
+                {{_ "Что означают проценты?"}}
+            </imigize>
+        </imigize>
+    </imigize>
+</imigize>

@@ -1,0 +1,18 @@
+$ns: '.imigize-about-project-sportmaster';
+
+#{$ns} {
+    padding: 3.7em 0;
+    text-align: left;
+}
+
+#{$ns}-title {
+    @include titleLanding;
+}
+
+#{$ns}-text-wrap {
+    @include textWrapLanding;
+}
+
+#{$ns}-text {
+    @include textLanding;
+}

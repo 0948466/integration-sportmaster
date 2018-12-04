@@ -1,0 +1,96 @@
+$ns: '.imigize-map-sportmaster';
+#{$ns} {
+
+}
+
+#{$ns}-title {
+   @include titleLandingSmall;
+    margin-bottom: 1em;
+}
+
+#{$ns}-table {
+    display: flex;
+    justify-content: space-between;
+}
+
+#{$ns}-item {
+    width: 24%;
+}
+
+#{$ns}-item__title {
+    display: inline-block;
+    min-width: 55px;
+    line-height: 32px;
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: normal;
+    background-repeat: no-repeat;
+    &_shop {
+        background-image: image-url("map/icon-shop-sportmaster.svg");
+        background-position: 11px -13px;
+        background-size: 24px;
+    }
+    &_gps {
+        background-image: image-url("map/icon-gps-sportmaster.svg");
+        background-position: 4px 2px;
+        background-size: 24px 26px;
+    }
+    &_hour {
+        background-image: image-url("map/icon-clock-sportmaster.png");
+        background-position: 3px 4px;
+    }
+    &_contact {
+        background-image: image-url("map/icon-phone-sportmaster.png");
+        background-position: 3px 4px;
+    }
+}
+
+#{$ns}-item__text {
+    position: relative;
+    font-size: 15px;
+    padding: 7px 0 0 0;
+    margin-left: 40px;
+    background-repeat: no-repeat;
+    &_metro {
+        margin-left: 12px;
+        padding-left: 20px;
+        background-image: image-url("map/icon-metro-sportmaster.png");
+        background-position: 2px 6px;
+    }
+}
+
+#{$ns}-description {
+    margin-bottom: 1em;
+}
+
+#{$ns}-description__title {
+    position: relative;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: normal;
+    padding: 0 0 4px;
+    margin: 0 0 10px 0;
+  &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 4px;
+      background: #000;
+      border-radius: 2px;
+  }
+}
+
+#{$ns}-description__text {
+    color: #2d2d2d;
+    font-family: 'corp',arial,helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+#{$ns}-yandex-map {
+    height: 375px;
+}

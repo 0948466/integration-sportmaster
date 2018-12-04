@@ -1,0 +1,255 @@
+$ns: '.imigize-comfortForm-AddNewArea-sportmaster';
+
+#{$ns} {
+    display: none;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#{$ns}-title {
+    padding: 14px 36px;
+    border-top: 1px solid #c8c7cc;
+    border-bottom: 1px solid #c8c7cc;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+}
+
+#{$ns}-add-wrap {
+    position: relative;
+}
+
+#{$ns}-add-photo {
+    display: none;
+}
+
+#{$ns}-text {
+    font-size: 14px;
+    line-height: 23px;
+    color: #000;
+    text-align: center;
+}
+
+#{$ns}-text-span {
+    color: #8d8d92;
+    text-align: center;
+}
+
+#{$ns}-add-btn {
+    font-size: 14px;
+    line-height: 23px;
+    color: $sportmasterColor;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        color: $sportmasterColorHover;
+    }
+}
+
+#{$ns}-arrow {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 9px;
+    width: 18px;
+    height: 2px;
+    background-color: $sportmasterColor;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: 1px;
+        width: 8px;
+        height: 2px;
+        background-color: $sportmasterColor;
+    }
+    &::before {
+        margin-top: 1px;
+        -webkit-transform: rotate(-33deg);
+        transform: rotate(-33deg);
+    }
+    &::after {
+        margin-top: -3px;
+        -webkit-transform: rotate(33deg);
+        transform: rotate(33deg);
+    }
+}
+
+#{$ns}-picture {
+    text-align: center;
+}
+
+#{$ns}-picture {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    box-sizing: border-box;
+    height: 100px;
+    border: 1px solid #dadada;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#{$ns}-pictures-left {
+    display: none;
+}
+
+
+#{$ns}-picture[data-img="1"] {
+    background-image: image-url("comfortFoot/addNewArea/kross-leg-left.svg");
+}
+
+
+#{$ns}-picture[data-img="2"] {
+    background-image: image-url("comfortFoot/addNewArea/left-hill.svg");
+}
+
+
+#{$ns}-picture[data-img="3"] {
+    background-image: image-url("comfortFoot/addNewArea/left-side-in.svg");
+}
+
+
+#{$ns}-picture[data-img="4"] {
+    background-image: image-url("comfortFoot/addNewArea/top-left.svg");
+}
+
+
+#{$ns}-picture[data-img="5"] {
+    background-image: image-url("comfortFoot/addNewArea/kross-leg-right.svg");
+}
+
+#{$ns}-picture[data-img="6"] {
+    background-image: image-url("comfortFoot/addNewArea/right-hill.svg");
+}
+
+
+#{$ns}-picture[data-img="7"] {
+    background-image: image-url("comfortFoot/addNewArea/right-side-in.svg");
+}
+
+
+#{$ns}-picture[data-img="8"] {
+    background-image: image-url("comfortFoot/addNewArea/top-right.svg");
+}
+
+
+#{$ns}-error {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+#{$ns}-textarea {
+    padding: 10px 14px;
+    width: 288px;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    font-style: italic;
+}
+
+#{$ns}-btn {
+    @include sportmasterBtn;
+
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    margin-left: -70px;
+    padding: 10px 15px;
+    min-width: 140px;
+}
+
+#{$ns}-input-files {
+    display: none;
+}
+
+#{$ns}-load-img {
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-image: image-url("comfortFoot/load.png");
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#{$ns}-load-error {
+    display: none;
+    margin-bottom: 10px;
+    color: red;
+}
+
+#{$ns}-load-result {
+    display: none;
+}
+
+#{$ns}-load-result-done,
+#{$ns}-load-result-all {
+    display: inline;
+}
+
+@media only screen and (min-device-width: 1001px) {
+
+    #{$ns}-add {
+        padding: 30px 0;
+        min-height: 365px;
+    }
+
+    #{$ns}-add-btn {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media only screen and (min-device-width: 400px) {
+    #{$ns}-text-span {
+        margin: 10px 0;
+    }
+    #{$ns}-text {
+        padding: 0 40px;
+    }
+
+    #{$ns}-add-btn {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-device-width: 1000px) {
+    #{$ns}-text-wrap {
+        min-height: calc(100vh - 161px - 51px - 238px - 25px);
+        line-height: calc(100vh - 161px - 51px - 238px - 25px);
+    }
+
+    #{$ns}-text-inner {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #{$ns}-text {
+        padding: 0 30px;
+    }
+
+    #{$ns}-add-btn {
+        padding: 0 30px;
+    }
+    #{$ns}-add {
+        min-height: calc(100vh - 51px - 238px);
+    }
+
+    #{$ns}-add-btn {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,30 @@
+$ns: '.imigize-comfortFoot-part-Header-sportmaster';
+
+#{$ns} {
+    padding: 10px 5px 10px 50px;
+    height: 96px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+#{$ns}-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#{$ns}-desc {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#{$ns}-desc-text {
+    font-size: 13px;
+    line-height: 17px;
+    color: #000;
+}

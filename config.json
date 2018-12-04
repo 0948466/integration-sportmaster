@@ -1,0 +1,13 @@
+{
+    "name": "integration/shop/sportmaster/main",
+    "ns": "Imigize.integration",
+    "js": {
+        "header": [
+            "App.js"
+        ]
+    },
+    "require": [
+        "core/gui/media/photo-viewer",
+        "integration/3d"
+    ]
+}

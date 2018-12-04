@@ -1,0 +1,202 @@
+$ns: '.imigize-integration-enter-sportmaster';
+
+#{$ns} {
+  margin: 0 auto;
+  padding: 1.8em 5.6% 1em;
+  position: relative;
+  font-size: 13px;
+  line-height: 22px;
+  color: #272727;
+  background-color: #fff;
+  width: 347px;
+  box-sizing: border-box;
+  z-index: auto;
+  font-family: 'cotext', arial, helvetica, sans-serif;
+}
+
+#{$ns}-__part3 {
+  padding: 31px 40px 20px 38px;
+  width: 440px;
+  min-height: 220px;
+}
+
+#{$ns}-back {
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: 35px;
+}
+
+.imigize-defaultLayout {
+  margin: 0;
+}
+
+#{$ns}-old {
+  display: none;
+}
+
+#{$ns}-title-logo,
+#{$ns}-title {
+  font-family: 'corp', arial, helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: bold;
+  color: #005aaa;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+}
+
+#{$ns}-title-logo {
+  text-transform: uppercase;
+}
+
+#{$ns}-title__part2 {
+  margin-bottom: 0.2em;
+}
+
+#{$ns}-text-logo {
+  margin-bottom: 2em;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #2d2d2d;
+}
+
+#{$ns}-text,
+#{$ns}-text__part1 {
+  margin-bottom: 1.7em;
+  font-size: 13px;
+  line-height: 1.3;
+  color: #2d2d2d;
+}
+
+#{$ns}-text__part2 {
+  margin-bottom: 1.2em;
+}
+
+#{$ns}-text__part1 {
+  max-width: 240px;
+}
+
+#{$ns}-form {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#{$ns}-form-id,
+#{$ns}-form-email,
+#{$ns}-form-password {
+  position: relative;
+  margin-bottom: 0.8em;
+  text-align: left;
+}
+
+#{$ns}-form-email__part2 {
+  margin-bottom: 3.5em;
+}
+
+#{$ns}-form-password {
+  margin-bottom: 3.3em;
+}
+
+#{$ns} #{$ns}-input {
+  padding: 0 11px;
+  width: 100%;
+  height: 24px;
+  box-sizing: border-box;
+  border: 1px solid #c0c0c0;
+  font-family: 'cotext', arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  color: #979797;
+  border-radius: 5px;
+  transition: border-color ease 0.3s;
+  background: linear-gradient(to bottom, #fcfcfd 0%, #efeff0 100%);
+  &:hover,
+  &:focus {
+    padding: 0 10px;
+    border: 2px solid $sportmasterColorHover;
+    outline: none;
+  }
+  &#{$ns}-input__error {
+    border: 2px solid $sportmasterColorHover;
+  }
+}
+
+#{$ns}-label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2d2d2d;
+  cursor: pointer;
+}
+
+#{$ns}-password-error,
+#{$ns}-email-error {
+  font-size: 11px;
+  line-height: 16px;
+  color: $sportmasterColorHover;
+}
+
+#{$ns}-error-code {
+  display: none;
+}
+
+#{$ns}-btn-enter-wrap {
+  margin-bottom: 0.3em;
+}
+
+#{$ns}-btn-enter,
+#{$ns}-btn-close {
+  @include btnSportmaster;
+  padding: 0.4em 13%;
+}
+
+#{$ns}-btn-send {
+  @include btnSportmaster;
+  padding: 0.4em 6.5%;
+}
+
+#{$ns}-link {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  border-bottom: 1px solid rgba(0, 90, 170, 0.3);
+  cursor: pointer;
+  color: #005aab;
+}
+
+#{$ns}-link-lost-password {
+  margin-bottom: 0.7em;
+}
+
+#{$ns}-title__part3 {
+  margin-bottom: 16px;
+}
+
+#{$ns}-text__part3 {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#{$ns}-part2,
+#{$ns}-part3 {
+  display: none;
+}
+
+#{$ns}-part3 {
+  text-align: center;
+}
+
+#{$ns}-register-required {
+  display: none;
+  color: $sportmasterColorHover;
+  font-size: 12px;
+}
+
+#{$ns}-line-text {
+  margin: 2em 0;
+}

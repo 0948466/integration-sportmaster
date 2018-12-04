@@ -1,0 +1,223 @@
+$ns: '.imigize-comfortForm-MenuList-sportmaster';
+
+#{$ns} {
+    display: none;
+}
+
+#{$ns}-menu {
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+#{$ns}-menu-title-wrap {
+    position: relative;
+    border-bottom: 1px solid #c8c7cc;
+    text-align: center;
+}
+
+#{$ns}-menu-title {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+#{$ns}-menu-list {
+    position: relative;
+    padding: 12px 5px 12px 37px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #3f3f3f;
+    border-radius: 4px;
+    border: solid 1px #d9d9d9;
+    cursor: pointer;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        margin-left: 13px;
+        margin-top: -5px;
+        width: 10px;
+        height: 10px;
+        background-color: #8ab6d6;
+        border-radius: 50%;
+    }
+    &:hover {
+        color: #fff;
+        border: solid 1px transparent;
+    }
+}
+
+#{$ns}-menu-list__active {
+    color: #fff;
+    border: solid 1px transparent;
+    & #{$ns}-menu-list-checkbox {
+        display: block;
+    }
+
+    &[data-value = '3'] {
+        background-color: #8ab6d6;
+    }
+
+    &[data-value = '2'] {
+        background-color: #c9d8df;
+    }
+
+    &[data-value = '1'] {
+        background-color: #4dd7aa;
+    }
+
+    &[data-value = '-2'] {
+        background-color: #ffd8d8;
+    }
+
+    &[data-value = '-3'] {
+        background-color: #fb4f4f;
+    }
+
+}
+
+#{$ns}-menu-list[data-value = '3'] {
+    &:hover {
+        background-color: #8ab6d6;
+        & #{$ns}-menu-list-checkbox {
+            display: block;
+        }
+    }
+
+    &::before {
+        background-color: #8ab6d6;
+    }
+}
+
+#{$ns}-menu-list[data-value = '2'] {
+    &:hover {
+        background-color: #c9d8df;
+        & #{$ns}-menu-list-checkbox {
+            display: block;
+        }
+    }
+    &::before {
+        background-color: #c9d8df;
+    }
+}
+
+#{$ns}-menu-list[data-value='1'] {
+    &:hover {
+        background-color: #4dd7aa;
+        & #{$ns}-menu-list-checkbox {
+            display: block;
+        }
+    }
+    &::before {
+        background-color: #4dd7aa;
+    }
+}
+
+#{$ns}-menu-list[data-value='-2'] {
+    &:hover {
+        background-color: #ffd8d8;
+        & #{$ns}-menu-list-checkbox {
+            display: block;
+        }
+    }
+    &::before {
+        background-color: #ffd8d8;
+    }
+}
+
+#{$ns}-menu-list[data-value='-3'] {
+    &:hover {
+        background-color: #fb4f4f;
+        & #{$ns}-menu-list-checkbox {
+            display: block;
+        }
+    }
+    &::before {
+        background-color: #fb4f4f;
+    }
+}
+
+#{$ns}-menu-list-checkbox {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 20px;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 1px;
+        width: 8px;
+        height: 2px;
+        background-color: #fff;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 14px;
+        height: 2px;
+        background-color: #fff;
+        transform: rotate(-47deg);
+    }
+}
+
+#{$ns}-image {
+    width: 90%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    cursor: pointer;
+}
+
+#{$ns}-btn {
+    @include sportmasterBtn;
+
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -70px;
+    padding: 10px 15px;
+    width: 140px;
+    min-height: 40px;
+}
+
+@media only screen and (min-device-width: 1001px) {
+    #{$ns}-menu-title-wrap {
+        padding: 16px 36px 16px 36px;
+    }
+
+    #{$ns}-image {
+        height: 179px;
+    }
+}
+
+@media only screen and (max-device-width: 1000px) {
+    #{$ns}-menu-title-wrap {
+        padding: 0 20px 0 36px;
+        height: 50px;
+        line-height: 50px;
+    }
+    #{$ns}-menu-title {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+    }
+
+    #{$ns}-image {
+        height: calc(100vh - 357px - 70px);
+    }
+
+}

@@ -1,0 +1,56 @@
+$ns: '.imigize-comfortForm-Finish-sportmaster';
+
+#{$ns} {
+    display: none;
+    padding: 50px 35px;
+    box-sizing: border-box;
+}
+
+#{$ns}-icon {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $sportmasterColor;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: image-url("comfortFoot/icon-medal.svg");
+}
+
+#{$ns}-title {
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000;
+    text-shadow: 0 0 0 #000;
+    text-align: center;
+}
+
+#{$ns}-text {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 23px;
+    color: #000;
+    text-align: center;
+}
+
+#{$ns}-description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8d8d92;
+    text-align: center;
+}
+
+#{$ns}-btn-close {
+    @include sportmasterBtn;
+
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    margin-left: -100px;
+    padding: 13px;
+    width: 200px;
+}

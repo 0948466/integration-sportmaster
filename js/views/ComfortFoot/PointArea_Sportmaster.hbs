@@ -1,0 +1,57 @@
+<imigize class="{{ns}}">
+    <imigize class="{{ns "header"}}">
+    </imigize>
+
+    <imigize class="{{ns "choose-side"}}">
+    </imigize>
+
+    <imigize class="{{ns "area"}}">
+        <imigize class="{{ns "area-top"}}">
+            <imigize class="{{ns "area-text"}}">
+                {{_ "Выберите некомфортные области или нажмите"}}
+            </imigize>
+            <imigize class="{{ns "area-btn"}} {{ns "area-btn-add-comfortPoint"}}">
+                {{_ "Все остальное комфортно"}}
+            </imigize>
+
+            <imigize class="{{ns "area-btn"}} {{ns "area-btn-change-side"}}">
+                {{_ "Поменять ногу"}}
+            </imigize>
+
+            <imigize class="{{ns "area-btn"}} {{ns "area-btn-end"}}">
+                {{_ "Завершить"}}
+            </imigize>
+        </imigize>
+
+        <imigize class="{{ns "area-selected"}}">
+            <imigize class="{{ns "btn-copy-foot"}}">
+                <imigize class="{{ns "popup-message"}}">
+                </imigize>
+            </imigize>
+
+            <imigize class="{{ns "add-new-area-btn"}}">
+            </imigize>
+            <imigize class="{{ns "area-selected-top"}}">
+
+                {{#each topMenuPoints }}
+                    <imigize class="{{ns "area-selected-btn"}}" data-name={{this}}></imigize>
+                {{/each}}
+
+            </imigize>
+            <imigize class="{{ns "area-selected-bottom"}}">
+
+                {{#each bottomMenuPoints }}
+                    <imigize class="{{ns "area-selected-btn"}}" data-name={{this}}></imigize>
+                {{/each}}
+
+            </imigize>
+            <imigize class="{{ns "area-btn-change"}}">
+                <imigize class="{{ns "area-btn-change-icon"}} {{ns "area-btn-change-icon__active"}}"></imigize>
+                <imigize class="{{ns "area-btn-change-span"}}" data-active="top">
+                    {{_ "Пятка"}}
+                </imigize>
+            </imigize>
+        </imigize>
+
+    </imigize>
+</imigize>

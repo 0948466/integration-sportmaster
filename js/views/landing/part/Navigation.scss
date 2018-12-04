@@ -1,0 +1,14 @@
+$ns: '.imigize-navigation-sportmaster';
+
+#{$ns} {
+    margin-bottom: 2em;
+}
+
+#{$ns}-inner {
+    text-align: right;
+}
+
+#{$ns}-button {
+    @include btnSportmaster;
+    padding: 0.4em 2.2%;
+}

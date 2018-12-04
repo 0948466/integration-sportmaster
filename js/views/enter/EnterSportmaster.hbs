@@ -1,0 +1,80 @@
+<imigize class="{{ns}}">
+    <imigize class="imigize-integration-backLink {{ns "back"}}"></imigize>
+    <imigize class="{{ns "content"}}">
+        <imigize class="{{ns "part1"}}">
+            <imigize class="{{ns "title-logo"}}">{{_ "Imigize"}}</imigize>
+            <imigize class="{{ns "text-logo"}}">{{_ "Сервис бесконтактной примерки обуви"}}</imigize>
+            <imigize class="{{ns "text" "part1"}}">{{_ "Введите ваши данные от личного кабинета Imigize"}}</imigize>
+            <imigize class="{{ns "register-required" }}">{{_ "Необходима авторизация"}}!</imigize>
+            <form class="{{ns "form"}} {{ns "form-login-by-id"}}">
+                <imigize class="{{ns "form-id"}}">
+                    <imigize class="{{ns "label"}}" for="input-id">{{_ "Id:"}}</imigize>
+                    <input class="{{ns "input"}} {{ns "input-id"}}" type="text" required>
+                    <imigize class="{{ns "id-error"}} {{ns "error-code"}}">{{_ "Несуществующий Id"}}</imigize>
+                    <imigize class="{{ns "global-error"}} {{ns "global-error-id"}} {{ns "error-code"}}">
+                        {{_ "Произошла непредвиденная ошибка"}}
+                    </imigize>
+                </imigize>
+            </form>
+
+            <imigize class="{{ns "line-text"}}">
+                {{_ "----------------------------Или----------------------------"}}</imigize>
+
+            <form class="{{ns "form"}} {{ns "form-login"}}">
+                <imigize class="{{ns "form-email"}}">
+                    <imigize class="{{ns "label"}}" for="input-email">{{_ "Email:"}}</imigize>
+                    <input class="{{ns "input"}} {{ns "input-email"}}" type="email" pattern=".+@.+\..+" required>
+                    <imigize class="{{ns "email-error"}} {{ns "error-code"}}">{{_ "Несуществующий E-mail"}}</imigize>
+                </imigize>
+                <imigize class="{{ns "form-password"}}">
+                    <imigize class="{{ns "label"}}" for="input-password">{{_ "Пароль:"}}</imigize>
+                    <input class="{{ns "input"}} {{ns "input-password"}}" type="password" name="imigize-password"
+                           required>
+                    <imigize class="{{ns "password-error"}} {{ns "error-code"}}">{{_ "Неправильный пароль"}}</imigize>
+                    <imigize class="{{ns "global-error"}} {{ns "error-code"}}">
+                        {{_ "Произошла непредвиденная ошибка"}}
+                    </imigize>
+                </imigize>
+
+                <imigize class="{{ns "btn-enter-wrap"}}">
+                    <imigize class="{{ns "btn-enter"}}">{{_ "Войти"}}</imigize>
+                </imigize>
+                <imigize class="{{ns "link"}} {{ns "link-lost-password"}}">{{_ "Я забыл пароль"}}</imigize>
+                <br>
+                <imigize class="{{ns "link"}} {{ns "link-register"}}">
+                    {{_ "Как зарегистрироваться в IMIGIZE?"}}
+                </imigize>
+            </form>
+        </imigize>
+
+        <imigize class="{{ns "part2"}}">
+            <imigize class="{{ns "title"}} {{ns "title" "part2"}}">{{_ "Восстановление пароля"}}</imigize>
+            <imigize class="{{ns "text"}} {{ns "text" "part2"}}">
+                {{_ "Введите Email, который вы указывали при регистрации в личном кабинете Imigize"}}
+            </imigize>
+
+            <form class="{{ns "form"}}  {{ns "form-restore"}}">
+                <imigize class="{{ns "form-email"}} {{ns "form-email" "part2"}}">
+                    <imigize class="{{ns "label"}}" for="input-email-restore">Email:</imigize>
+                    <input class="{{ns "input"}} {{ns "input-email-restore"}}" type="email" pattern=".+@.+\..+"
+                           required>
+                    <imigize class="{{ns "email-error"}} {{ns "error-code"}}">{{_ "Несуществующий email"}}</imigize>
+                </imigize>
+
+                <imigize>
+                    <imigize class="{{ns "btn-send"}}">{{_ "Отправить"}}</imigize>
+                </imigize>
+                <imigize class="{{ns "link"}} {{ns "link-remember-password"}}">{{_ "Я вспомнил пароль"}}</imigize>
+            </form>
+        </imigize>
+
+        <imigize class="{{ns "part3"}}">
+            <imigize class="{{ns "title"}} {{ns "title__part3"}}">{{_ "Сообщение отправлено"}}</imigize>
+            <imigize class="{{ns "text"}} {{ns "text__part3"}}">
+                {{_ "Проверьте Ваш E-mail, мы отправили Вам информацию для восстановления доступа к сервису"}}</imigize>
+            <imigize>
+                <imigize class="{{ns "btn-close"}}">{{_ "Закрыть"}}</imigize>
+            </imigize>
+        </imigize>
+    </imigize>
+</imigize>

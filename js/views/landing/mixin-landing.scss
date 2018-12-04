@@ -1,0 +1,48 @@
+$colorSportmaster: #005aab;
+$color2Sportmaster: #eb0000;
+
+@mixin titleLanding {
+  margin-bottom: 0.6em;
+  font-size: 40px;
+  line-height: 1.11;
+  font-weight: 100;
+  letter-spacing: -0.01em;
+  color: #0058ab;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'corp', arial, helvetica, sans-serif;
+}
+
+@mixin titleLandingSmall {
+  margin-bottom: 0.2em;
+  font-size: 30px;
+  line-height: 1.11;
+  font-weight: 100;
+  letter-spacing: -0.01em;
+  color: #005aab;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin textLanding {
+  margin-bottom: 0.5em;
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+@mixin textWrapLanding {
+  padding: 1.55em 3% 1.5em 2%;
+  background-color: #f4f4f4;
+}
+
+@mixin linkSportmaster2 {
+  display: inline;
+  color: $colorSportmaster;
+  cursor: pointer;
+  text-decoration: underline;
+  &:hover {
+    color: $color2Sportmaster;
+  }
+}

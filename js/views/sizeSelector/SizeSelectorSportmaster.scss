@@ -1,0 +1,60 @@
+$ns: '.imigize-integration-size-selector-sportmaster';
+
+#{$ns} {
+    padding-left: 34px;
+    font-size: 13px;
+    line-height: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#{$ns}-size {
+    height: 27px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #4c4d4d;
+}
+
+#{$ns}-sizes {
+    display: inline-block;
+}
+
+#{$ns}-size {
+    margin-left: 9px;
+    padding: 1px 9px;
+    min-width: 15px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #313131;
+    text-align: center;
+    border: 1px solid #cfcfcf;
+    cursor: pointer;
+    &:hover {
+        padding: 0 8px;
+        border: 2px solid $sportmasterColor;
+    }
+}
+
+#{$ns}-size__selected {
+    position: relative;
+    padding: 0 8px;
+    border: 2px solid $sportmasterColor;
+    cursor: default;
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 47px;
+        left: 50%;
+        margin-left: -6px;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-left: 1px solid #e0e0e0;
+        border-top: 1px solid #e0e0e0;
+        transform: rotate(45deg);
+    }
+}

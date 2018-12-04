@@ -1,0 +1,58 @@
+$ns: '.imigize-result-busket-sportmaster';
+
+#{$ns} {
+  font-family: 'corp', arial, helvetica, sans-serif;
+}
+
+#{$ns}-result {
+  margin: 0 auto;
+  padding: 0.4em 7%;
+  width: 84px;
+  box-sizing: border-box;
+  font-family: 'corp', arial, helvetica, sans-serif;
+  background-color: #7b8086;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#{$ns}-textResult {
+  margin-bottom: 0.3em;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #fff;
+  &__span {
+    display: inline;
+    text-transform: lowercase;
+  }
+}
+
+#{$ns}-value {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #fff600;
+}
+
+#{$ns}-value__percent {
+  font-size: 10px;
+}
+
+#{$ns}-size {
+  font-weight: bold;
+}
+
+#{$ns}-link-wrap {
+  margin: 0 auto;
+  padding: 0.4em 7%;
+  width: 84px;
+  box-sizing: border-box;
+}
+
+#{$ns}-link {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 10px;
+  line-height: 1.2;
+  border-bottom: 1px dashed;
+  cursor: pointer;
+}

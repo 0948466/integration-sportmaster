@@ -1,0 +1,27 @@
+$ns: '.imigize-comfortForm-part-chooseSide-sportmaster';
+
+#{$ns}-item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 6px;
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    border-bottom: 4px solid #dadada;
+    opacity: 0.5;
+    text-align: center;
+    cursor: pointer;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        opacity: 1;
+    }
+    &__active {
+        opacity: 1;
+        border-bottom: 4px solid $sportmasterColor;
+    }
+
+}

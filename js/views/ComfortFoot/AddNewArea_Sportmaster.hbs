@@ -1,0 +1,77 @@
+<imigize class="{{ns}}">
+    <imigize class="{{ns "title"}}">
+        {{_ "Добавить область"}}
+    </imigize>
+
+    <imigize class="{{ns "choose-side"}}"></imigize>
+
+    <imigize class="{{ns "add-wrap"}}">
+        <imigize class="{{ns "add"}} {{ns "add-area"}}">
+            <imigize class="{{ns "text-wrap"}}">
+                <imigize class="{{ns "text-inner"}}">
+                    <imigize class="{{ns "text"}}">
+                        {{_ "Отметьте на рисунке другие (неотмеченные на общей карте) области, где вам некомфортно"}}
+                        <imigize class="{{ns "text-span"}}">{{_ "или"}}</imigize>
+                    </imigize>
+
+                    <imigize class="{{ns "add-btn"}}">
+                        {{_ "Загрузите фотографию"}}
+                        <imigize class="{{ns "arrow"}}"></imigize>
+                    </imigize>
+                </imigize>
+            </imigize>
+
+            <imigize class="{{ns "pictures"}}">
+                <imigize class="{{ns "pictures-left"}}">
+                    <imigize class="{{ns "picture"}}" data-img="1"></imigize>
+                    <imigize class="{{ns "picture"}}" data-img="2"></imigize>
+                    <imigize class="{{ns "picture"}}" data-img="3"></imigize>
+                    <imigize class="{{ns "picture"}}" data-img="4"></imigize>
+                </imigize>
+                <imigize class="{{ns "pictures-right"}}">
+                    <imigize class="{{ns "picture"}}" data-img="5"></imigize>
+                    <imigize class="{{ns "picture"}}" data-img="6"></imigize>
+                    <imigize class="{{ns "picture"}}" data-img="7"></imigize>
+                    <imigize class="{{ns "picture"}}" data-img="8"></imigize>
+                </imigize>
+            </imigize>
+
+        </imigize>
+
+        <imigize class="{{ns "add"}} {{ns "add-photo"}}">
+            <imigize class="{{ns "text-wrap"}}">
+                <imigize class="{{ns "text-inner"}}">
+                    <imigize class="{{ns "text"}}">
+                        {{_ "Загрузите фотографию"}}
+                        <imigize class="{{ns "text-span"}}">{{_ "или"}}</imigize>
+                    </imigize>
+
+                    <imigize class="{{ns "add-btn"}}">
+                        {{_ "Отметьте на рисунке другие (неотмеченные на общей карте) области, где вам некомфортно"}}
+                        <imigize class="{{ns "arrow"}}"></imigize>
+                    </imigize>
+                </imigize>
+            </imigize>
+
+            <imigize class="{{ns "input-files"}}">
+                <input class="{{ns "input-files-item"}}" type="file" multiple accept="image/*" name="pictures[]"/>
+            </imigize>
+
+            <imigize class="{{ns "load-img"}} {{ns "dropbox"}}"></imigize>
+            <imigize class="{{ns "load-error"}}">{{_ "Необходимо выбрать файлы в формате изображений"}}</imigize>
+            <imigize class="{{ns "load-result"}}">
+                <imigize class="{{ns "load-result-done"}}">0</imigize>
+                {{_ " фото из "}}
+                <imigize class="{{ns "load-result-all"}}">0</imigize>
+                {{_ " загружено"}}
+            </imigize>
+        </imigize>
+
+        <imigize class="{{ns "error"}}">{{_ "Необходимые данные не сохранены"}}</imigize>
+    </imigize>
+
+    <textarea class="{{ns "textarea"}}" rows="4" placeholder="{{_ "Комментировать"}}"></textarea>
+
+    <imigize class="{{ns "btn"}}">{{_ "Добавить"}}</imigize>
+
+</imigize>

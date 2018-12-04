@@ -1,0 +1,36 @@
+$ns: '.imigize-integration-empty-sportmaster';
+
+#{$ns} {
+  @include buttonCompatibility;
+  cursor: default;
+}
+
+#{$ns}-wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#{$ns}-title {
+  margin-right: 5%;
+  align-self: center;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+#{$ns}-compatibility {
+  display: inline;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+  color: #fff600;
+}
+
+#{$ns}-percent {
+  display: inline;
+  font-size: 17px;
+  line-height: 1;
+  font-weight: bold;
+  color: #fff600;
+}

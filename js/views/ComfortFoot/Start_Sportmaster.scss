@@ -1,0 +1,109 @@
+$ns: '.imigize-comfortForm-Start-sportmaster';
+
+#{$ns} {
+    display: none;
+    padding: 18px 0 10px 0;
+    box-sizing: border-box;
+    background-image: image-url("comfortFoot/onboarding_short.png");
+    background-repeat: no-repeat;
+    background-position: 50% 169px;
+    background-size: 94%;
+}
+
+#{$ns}-title {
+    margin-bottom: 12px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000;
+    text-align: center;
+}
+
+#{$ns}-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    color: #000;
+    text-align: center;
+}
+
+#{$ns}-link {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    color: $sportmasterColor;
+    &:hover {
+        color: $sportmasterColorHover;
+    }
+}
+
+#{$ns}-arrow {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 9px;
+    width: 18px;
+    height: 2px;
+    background-color: $sportmasterColor;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: 1px;
+        width: 8px;
+        height: 2px;
+        background-color: $sportmasterColor;
+    }
+    &::before {
+        margin-top: 1px;
+        -webkit-transform: rotate(-33deg);
+        transform: rotate(-33deg);
+    }
+    &::after {
+        margin-top: -3px;
+        -webkit-transform: rotate(33deg);
+        transform: rotate(33deg);
+    }
+
+}
+
+#{$ns}-description {
+    margin: 0 auto;
+    width: 200px;
+}
+
+#{$ns}-btn {
+    @include sportmasterBtn;
+
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    margin-left: -95px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
+    width: 190px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    user-select: none;
+}
+
+@media only screen and (min-device-width: 1001px) {
+    #{$ns} {
+        min-height: 530px;
+    }
+}
+
+@media only screen and (max-device-width: 1000px) {
+    #{$ns} {
+        height: 100vh;
+    }
+}

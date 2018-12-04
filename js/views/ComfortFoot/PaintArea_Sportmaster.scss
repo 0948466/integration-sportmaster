@@ -1,0 +1,98 @@
+$ns: '.imigize-comfortForm-PaintArea-sportmaster';
+
+#{$ns} {
+    display: none;
+    padding: 20px;
+    min-height: 400px;
+}
+
+#{$ns}-instrument {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 110px;
+    height: 45px;
+    border-radius: 7px;
+    border: 2px solid $sportmasterColor;
+    overflow: hidden;
+}
+
+#{$ns}-instrument-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 45px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
+    &__active {
+        background-color: $sportmasterColor;
+        cursor: default;
+    }
+}
+
+#{$ns}-pencil {
+    border-right: 2px solid $sportmasterColor;
+    background-image: image-url("comfortFoot/icon-pencil.svg");
+    &__active, &:hover {
+        background-color: $sportmasterColor;
+        background-image: image-url("comfortFoot/icon-pencil-white.svg");
+    }
+
+    &__active {
+        cursor: default;
+    }
+}
+
+#{$ns}-eraser {
+    background-image: image-url("comfortFoot/icon-eraser.svg");
+    &__active, &:hover {
+        background-color: $sportmasterColor;
+        background-image: image-url("comfortFoot/icon-eraser-white.svg");
+    }
+
+    &__active {
+        cursor: default;
+    }
+}
+
+#{$ns}-image {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 250px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &__pencil {
+        cursor: pointer;
+    }
+
+    &__eraser {
+        cursor: pointer;
+    }
+}
+
+#{$ns}-point {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+#{$ns}-btn {
+    @include sportmasterBtn;
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    margin-left: -70px;
+    padding: 10px 15px;
+    width: 140px;
+}

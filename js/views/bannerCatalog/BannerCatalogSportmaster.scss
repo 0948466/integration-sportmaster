@@ -1,0 +1,113 @@
+$ns: '.imigize-banner-catalog-sportmaster';
+
+#{$ns} {
+    display: flex;
+    padding: 1em 2.6% 0.8em;
+    margin-bottom: 1.3em;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #00002b;
+    background-image: image-url("bannerCatalog/background-banner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'cotext',arial,helvetica,sans-serif;
+}
+
+#{$ns}-left {
+    padding-right: 3.5%;
+}
+
+#{$ns}-title {
+    margin-bottom: .7em;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.007em;
+    text-transform: uppercase;
+}
+
+#{$ns}-item-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+#{$ns}-item {
+   width: 32.5%;
+}
+
+#{$ns}-top {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-bottom: .7em;
+}
+
+#{$ns}-top-text {
+    margin-right: 1px;
+    font-family: 'corp', arial, helvetica, sans-serif;
+    font-size: 63px;
+    line-height: 54px;
+    font-weight: 100;
+    color: #fff;
+}
+
+#{$ns}-img {
+    width: 47px;
+    height: 47px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__3d {
+        background-image: image-url("bannerCatalog/icon-round-3d.png");
+    }
+    &__foot {
+        background-image: image-url("bannerCatalog/icon-round-foot.png");
+    }
+    &__reg {
+        background-image: image-url("bannerCatalog/icon-round-reg.png");
+    }
+}
+
+#{$ns}-text {
+    font-size: 11px;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 0.005em;
+}
+
+#{$ns}-link {
+    display: inline;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#{$ns}-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#{$ns}-img-3d-foot {
+    margin-bottom: 1.7em;
+    width: 127px;
+    height: 115px;
+    background-image: image-url("bannerCatalog/icon-3d-foot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#{$ns}-button {
+    padding: 0.25em 2%;
+    width: 105px;
+    box-sizing: border-box;
+    background-color: #ff023a;
+    color: #fff;
+    font-family: 'corp', arial, helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.5;
+    cursor: pointer;
+    text-align: center;
+}

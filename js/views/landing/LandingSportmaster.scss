@@ -1,0 +1,28 @@
+$ns: '.imigize-integration-landing-sportmaster';
+
+#{$ns} {
+    padding: 2.7em 2% 2em;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    @include responsiveFont(18px, 8px);
+    font-family: 'cotext', arial, helvetica, sans-serif;
+}
+
+#{$ns}-title {
+    margin-bottom: 23px;
+    font-size: 56px;
+    line-height: 75px;
+    font-weight: 300;
+    color: #1f1f1f;
+    text-align: center;
+}
+
+#{$ns}-fixed {
+    position: fixed;
+    top: 0;
+}
+
+#{$ns}-congratulations {
+    display: none;
+}

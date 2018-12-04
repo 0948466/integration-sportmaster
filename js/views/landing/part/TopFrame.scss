@@ -1,0 +1,36 @@
+$ns: '.imigize-topFrame-sportmaster';
+
+#{$ns} {
+    color: #fff;
+}
+
+#{$ns}-title {
+    @include titleLanding;
+}
+
+#{$ns}-background-img {
+    width: 100%;
+    min-height: 615px;
+    box-sizing: border-box;
+    background-image: image-url("landing/background-topFrame.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 6px solid $sportmasterColor;
+    @include w320-767 {
+        height: 61.5vw;
+        min-height: inherit;
+    }
+
+}
+
+#{$ns}-text-wrapper {
+    @include textWrapLanding;
+}
+
+#{$ns}-text {
+    @include textLanding;
+}
+
+#{$ns}-link {
+    @include linkSportmaster2;
+}

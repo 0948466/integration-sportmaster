@@ -1,0 +1,73 @@
+$ns: '.imigize-how-know-size-sportmaster';
+
+#{$ns} {
+  padding: 3.6em 0;
+}
+
+#{$ns}-title {
+  @include titleLandingSmall;
+  margin-bottom: .7em;
+}
+
+#{$ns}-item-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+#{$ns}-item {
+  &:nth-of-type(1) {
+    padding-right: 3%;
+    width: 31%;
+  }
+
+  &:nth-of-type(2) {
+    width: 31%;
+    padding-right: 4%;
+  }
+
+  &:nth-of-type(3) {
+    width: 25%;
+  }
+}
+
+#{$ns}-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
+#{$ns}-top-text {
+  font-size: 157px;
+  line-height: 157px;
+  font-weight: 100;
+  color: #cacaca;
+}
+
+
+#{$ns}-img {
+  width: 111px;
+  height: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__3d {
+    background-image: image-url("landing/icon-round-3d.png");
+  }
+  &__foot {
+    background-image: image-url("landing/icon-round-foot.png");
+  }
+  &__reg {
+    background-image: image-url("landing/icon-round-reg.png");
+  }
+}
+
+#{$ns}-text {
+  font-size: 14px;
+  line-height: 1.32;
+  color: #000;
+  letter-spacing: 0.01em;
+}
+
+#{$ns}-link {
+  @include linkSportmaster2
+}

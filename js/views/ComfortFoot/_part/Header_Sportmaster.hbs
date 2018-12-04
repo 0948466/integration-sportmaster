@@ -1,0 +1,30 @@
+<imigize class="{{ns}}">
+    <imigize class="{{ns "img"}}" {{#if src}}
+             style="background-image: url({{ src }})"
+    {{/if}}>
+    </imigize>
+    <imigize class="{{ns "desc"}}">
+
+        <imigize class="{{ns "desc-text"}}">
+            {{#if brand}}
+                {{_ brand }}
+            {{else}}
+            {{/if}}
+        </imigize>
+        <imigize class="{{ns "desc-text"}}">
+            {{#if type}}
+                {{_ type }}
+            {{/if}}
+        </imigize>
+        <imigize class="{{ns "desc-text"}}">
+            {{#if article}}
+                {{_ "Артикул"}} {{_ article }}
+            {{/if}}
+        </imigize>
+        <imigize class="{{ns "desc-text"}}">
+            {{#if size}}
+                {{_ "Размер"}} {{_ size }}
+            {{/if}}
+        </imigize>
+    </imigize>
+</imigize>

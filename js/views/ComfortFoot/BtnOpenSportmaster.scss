@@ -1,0 +1,62 @@
+$ns: '.imigize-comfortForm-btnOpen-sportmaster';
+
+#{$ns} {
+    width: 174px;
+    font-family: inherit;
+}
+
+#{$ns}-btn {
+    display: block;
+    padding: 6px 0;
+    margin-bottom: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #fff;
+    border: solid 1px #bab5b5;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    &__good {
+        color: #48a032;
+        &:hover {
+            background-color: #edf8e9;
+        }
+    }
+    &__bad {
+        color: $sportmasterColor2;
+        &:hover {
+            background-color: #fff3f2;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+#{$ns}-btn-edit {
+    display: none;
+    color: #9b9b9b;
+    cursor: pointer;
+    text-align: center;
+}
+
+#{$ns}-last-value {
+    display: none;
+    margin-top: -7px;
+    vertical-align: top;
+    margin-bottom: 3px;
+    padding: 9px 0;
+    width: 176px;
+    text-align: center;
+    color: #8b8b8b;
+}
+
+
+#{$ns}-last-value-span {
+    display: inline-block;
+    vertical-align: top;
+}

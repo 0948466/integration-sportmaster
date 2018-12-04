@@ -1,0 +1,80 @@
+$ns: '.imigize-comfortForm-FinishAddNewArea-sportmaster';
+
+#{$ns} {
+    display: none;
+    padding: 50px 35px;
+    box-sizing: border-box;
+}
+
+#{$ns}-icon {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $sportmasterColor;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 22px;
+        height: 2px;
+        background-color: #fff;
+    }
+    &::before {
+        margin-top: 3px;
+        margin-left: -13px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        width: 13px;
+    }
+
+    &::after {
+        margin-top: 0;
+        margin-left: -6px;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+#{$ns}-title {
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: 19px;
+    line-height: 23px;
+    color: #000;
+    text-shadow: 0 0 0 #000;
+    text-align: center;
+}
+
+#{$ns}-text {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+}
+
+#{$ns}-description {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #8d8d92;
+    text-align: center;
+}
+
+#{$ns}-btn {
+    @include sportmasterBtn;
+
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    margin-left: -70px;
+    padding: 10px 15px;
+    width: 140px;
+}
